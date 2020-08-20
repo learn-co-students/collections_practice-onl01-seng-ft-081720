@@ -41,3 +41,21 @@ def kesha_maker(array)
         result.push(element)
     end
 end
+
+def find_a(array)
+    array.select do |i|
+        i[0]=="a"
+    end
+end
+
+def sum_array(array)
+    array.inject { |sum, n| sum + n }   
+end
+
+def add_s (array)
+    array.each_with_index do |name,index|
+        if index != 1
+            name << "s"  
+        end
+    end
+end
